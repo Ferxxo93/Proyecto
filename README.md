@@ -1,58 +1,50 @@
-# Akihabara Center
+# Akihabara Center - Proyecto Final E-commerce
 
-Proyecto web desarrollado como iniciativa personal para **Akihabara Center**, un emprendimiento dedicado a la venta de mangas y cómics en Buenos Aires, Argentina.  
-Este proyecto forma parte de mi proceso de aprendizaje en el **curso Front End de Talento 2026**.
+Este proyecto fue desarrollado como entrega final del curso **Front End Talento 2026**.  
+Consiste en un sitio web de e-commerce para **Akihabara Center**, un emprendimiento dedicado a la venta de mangas.
 
 ---
 
-## 🚀 Objetivo
-Crear una página web moderna y atractiva que represente la identidad de Akihabara Center, con un diseño inspirado en la cultura japonesa y enfocado en:
-- Mostrar el catálogo de mangas destacados.
-- Presentar promociones y combos especiales.
-- Compartir reseñas de clientes.
-- Facilitar el contacto con la tienda.
+## 🚀 Funcionalidades
+- Catálogo dinámico de productos cargados desde un **JSON local**.
+- Carrito de compras con persistencia en **localStorage**.
+- Contador dinámico de productos en el carrito.
+- Edición de cantidades y eliminación de productos dentro del carrito.
+- Formulario de contacto funcional con **Formspree**.
+- Validación de formulario con JavaScript.
+- Diseño responsivo con **Flexbox, Grid y Bootstrap**.
+- Paleta de colores inspirada en la cultura japonesa (negro, rojo, blanco).
+- Buenas prácticas de accesibilidad y SEO (metaetiquetas, alt en imágenes, navegación con teclado).
 
 ---
 
 ## 🛠️ Tecnologías utilizadas
-- **HTML5** → estructura semántica de la página.  
-- **CSS3** → estilos personalizados con paleta de colores basada en negro, rojo y blanco.  
-- **Responsive Design** → adaptable a dispositivos móviles, tablets y escritorio.  
+- **HTML5 semántico**
+- **CSS3 + Bootstrap**
+- **JavaScript (DOM, Fetch API, localStorage)**
+- **Google Fonts (Noto Sans JP)**
+- **Formspree** (para envío de formularios)
 
 ---
 
-## 📂 Estructura del proyecto
-- `index.html` → Página principal con secciones de catálogo, promociones, reseñas y contacto.  
-- `css/styles.css` → Hoja de estilos con diseño moderno y paleta Akihabara Center.  
-- `img/` → Carpeta destinada a imágenes (logo, mangas, clientes, etc.).  
-
----
-
-## 🎨 Identidad visual
-La paleta de colores está inspirada en la estética japonesa y la cultura otaku:
-- **Negro (#000)** → base y elegancia.  
-- **Rojo (#e50914)** → energía y pasión por el manga.  
-- **Blanco (#fff)** → limpieza y contraste visual.  
-
----
-
-## 📖 Aprendizaje
-Este proyecto me permitió aplicar conceptos clave del curso **Front End Talento 2026**:
-- Maquetación con HTML semántico.  
-- Uso de Flexbox y Grid para layouts responsivos.  
-- Creación de componentes reutilizables (cards, botones, secciones).  
-- Buenas prácticas en organización de código y estilos.  
+## 📂 Estructura
+- `index.html` → Página principal con secciones: Hero, Productos, Carrito, Reseñas, Contacto y Footer.
+- `css/styles.css` → Estilos personalizados y responsivos.
+- `js/script.js` → Lógica de productos, carrito y validación de formulario.
+- `data/productos.json` → Productos simulados.
+- `README.md` → Documentación del proyecto.
 
 ---
 
 ## 📌 Próximos pasos
-- Integrar JavaScript para mejorar la interactividad (carrito de compras, animaciones).  
-- Conectar con un backend para gestionar catálogo dinámico.  
-- Optimizar SEO y accesibilidad.  
+- Integrar una API real para productos.
+- Mejorar la experiencia de usuario con animaciones.
+- Implementar un sistema de login y registro.
+- Optimizar aún más el SEO con títulos dinámicos y sitemap.
 
 ---
 
 ## 👨‍💻 Autor
 **Fernando Cornejo**  
-Digital entrepreneur & estudiante de desarrollo de videojuegos.  
-Actualmente cursando **Front End Talento 2026**.  
+Estudiante de Front End en **Talento 2026**  
+Digital entrepreneur & apasionado por el manga y la cultura japonesa.
