@@ -1,180 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akihabara Center</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akihabara Center - E-commerce</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 
+  <!-- SEO -->
+  <meta name="description" content="Akihabara Center - Tienda online de mangas en Buenos Aires. Descubrí las últimas novedades, clásicos imperdibles y promociones exclusivas.">
+  <meta name="keywords" content="manga, comics, akihabara, tienda online, Buenos Aires, Dorohedoro, Kagurabachi, Solo Leveling">
+  <meta name="author" content="Fernando Cornejo">
+  <meta name="robots" content="index, follow">
+</head>
 <body>
 
-    <!-- Encabezado -->
-    <header class="header">
-        <div class="container">
-            <h1 class="logo">
-                <img src="img\logo-akihabara.png" alt="Logo Akihabara Center">
-                Akihabara Center
-            </h1>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#catalogo">Catálogo</a></li>
-                    <li><a href="#promos">Promociones</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">
+        <img src="img/logo-akihabara.png" alt="Logo Akihabara Center">
+        Akihabara Center
+      </h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#resenias">Reseñas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#carrito">Carrito (<span id="carrito-contador">0</span>)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <h2>Tu mundo de mangas en un solo lugar</h2>
+      <p>Descubrí las últimas novedades y clásicos imperdibles.</p>
+      <a href="#productos" class="btn">Ver catálogo</a>
+    </div>
+  </section>
+
+  <!-- Productos -->
+  <main>
+    <section id="productos">
+      <h2 class="section-title">Productos</h2>
+      <div id="productos-container" class="cards-container"></div>
+    </section>
+
+    <!-- Carrito -->
+    <section id="carrito">
+      <h2 class="section-title">Carrito de compras</h2>
+      <div id="carrito-container"></div>
+    </section>
+
+    <!-- Reseñas -->
+    <section id="resenias">
+      <h2 class="section-title">Lo que dicen nuestros lectores</h2>
+      <div class="resenias-container">
+        <div class="resenia-card">
+          <p>“Siempre consigo los mangas que busco, incluso los difíciles de encontrar.”</p>
+          <div class="resenia-author">
+            <img src="img/cliente1.jpg" alt="Cliente 1">
+            <div>
+              <h4>María López</h4>
+              <span>Cliente desde 2024</span>
+            </div>
+          </div>
         </div>
-    </header>
-
-    <main>
-
-        <!-- Hero -->
-        <section class="hero" id="inicio">
-            <div class="hero-content">
-                <h2>Tu mundo de mangas en un solo lugar</h2>
-                <p>Descubrí las últimas novedades y clásicos imperdibles.</p>
-                <a href="#catalogo" class="btn">Ver catálogo</a>
+        <div class="resenia-card">
+          <p>“La atención es excelente y los envíos llegan rapidísimo.”</p>
+          <div class="resenia-author">
+            <img src="img/cliente2.jpg" alt="Cliente 2">
+            <div>
+              <h4>Juan Pérez</h4>
+              <span>Compró One Piece</span>
             </div>
-        </section>
-
-        <!-- Catálogo -->
-        <section class="catalogo-section" id="catalogo">
-            <h2 class="section-title">Catálogo destacado</h2>
-            <div class="cards-container">
-                <div class="card">
-                    <img src="img/manga1.jpg" alt="Manga 1">
-                    <div class="card-content">
-                        <h3>Dorohedoro</h3>
-                        <p>Un viaje oscuro y surrealista lleno de acción.</p>
-                        <a href="#">Ver más →</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/manga2.jpg" alt="Manga 2">
-                    <div class="card-content">
-                        <h3>Kagurabachi</h3>
-                        <p>La nueva sensación del shonen que no te podés perder.</p>
-                        <a href="#">Ver más →</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/manga3.jpg" alt="Manga 3">
-                    <div class="card-content">
-                        <h3>Solo Leveling</h3>
-                        <p>La historia del cazador más fuerte del mundo.</p>
-                        <a href="#">Ver más →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Promociones -->
-        <section class="promos-section" id="promos">
-            <h2 class="section-title">Promociones</h2>
-            <div class="cards-container">
-                <div class="card">
-                    <img src="img/promo1.jpg" alt="Promo 1">
-                    <div class="card-content">
-                        <h3>Combo Tankobon</h3>
-                        <p>Elegí 3 tomos y llevate un descuento especial.</p>
-                        <a href="#">Aprovechá →</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/promo2.jpg" alt="Promo 2">
-                    <div class="card-content">
-                        <h3>Kanzenban Premium</h3>
-                        <p>Ediciones de lujo con beneficios exclusivos.</p>
-                        <a href="#">Descubrí más →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Reseñas -->
-        <section class="resenias-section" id="resenias">
-            <h2 class="section-title">Lo que dicen nuestros lectores</h2>
-            <div class="resenias-container">
-                <div class="resenia-card">
-                    <p>“Siempre consigo los mangas que busco, incluso los difíciles de encontrar.”</p>
-                    <div class="resenia-author">
-                        <img src="img/cliente1.jpg" alt="Cliente 1">
-                        <div>
-                            <h4>María López</h4>
-                            <span>Cliente desde 2024</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="resenia-card">
-                    <p>“La atención es excelente y los envíos llegan rapidísimo.”</p>
-                    <div class="resenia-author">
-                        <img src="img/cliente2.jpg" alt="Cliente 2">
-                        <div>
-                            <h4>Juan Pérez</h4>
-                            <span>Compró One Piece</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contacto -->
-        <section class="contacto-section" id="contacto">
-            <h2 class="section-title">Contacto</h2>
-            <div class="contacto-container">
-                <div class="contacto-info">
-                    <h3>Visitá nuestra tienda</h3>
-                    <p>📍 Buenos Aires, Argentina</p>
-                    <p>📞 +54 11 7899-9143</p>
-                    <p>✉️ akihabaracenterar@gmail.com</p>
-                </div>
-                <div class="contacto-form">
-                    <h3>Escribinos</h3>
-                    <form>
-                        <input type="text" placeholder="Nombre" required>
-                        <input type="email" placeholder="Email" required>
-                        <textarea placeholder="Mensaje" required></textarea>
-                        <button type="submit" class="btn">Enviar</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-box">
-                <h3>Akihabara Center</h3>
-                <p>Tu espacio dedicado al manga y la cultura japonesa.</p>
-            </div>
-            <div class="footer-box">
-                <h3>Enlaces</h3>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#catalogo">Catálogo</a></li>
-                    <li><a href="#promos">Promociones</a></li>
-                    <li><a href="#resenias">Reseñas</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="footer-box">
-                <h3>Seguinos</h3>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/profile.php?id=61587685082720">Facebook</a>
-                    <a href="https://www.instagram.com/akihabaracenter.ar/">Instagram</a>
-                    <a href="#">TikTok</a>
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="footer-bottom">
-            <p>© 2026 Akihabara Center | Todos los derechos reservados</p>
+        <div class="resenia-card">
+          <p>“Gran variedad de títulos y ediciones especiales.”</p>
+          <div class="resenia-author">
+            <img src="img/cliente3.jpg" alt="Cliente 3">
+            <div>
+              <h4>Sofía Martínez</h4>
+              <span>Cliente frecuente</span>
+            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
+    <!-- Contacto -->
+    <section id="contacto">
+      <h2 class="section-title">Contacto</h2>
+      <form id="contacto-form" action="https://formspree.io/f/xbdnyddr" method="POST">
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-box">
+        <h3>Akihabara Center</h3>
+        <p>Tu espacio dedicado al manga y la cultura japonesa.</p>
+      </div>
+      <div class="footer-box">
+        <h3>Enlaces</h3>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#resenias">Reseñas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#carrito">Carrito</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <h3>Seguinos</h3>
+        <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+      <div class="footer-box">
+        <h3>Contacto</h3>
+        <p>📍 Buenos Aires, Argentina</p>
+        <p>📞 +54 11 1234-5678</p>
+        <p>✉️ ventas@akihabaracenter.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Akihabara Center | Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

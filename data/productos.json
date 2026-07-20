@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "titulo": "Dorohedoro Vol. 1",
+    "precio": 3500,
+    "imagen": "img/manga1.jpg"
+  },
+  {
+    "id": 2,
+    "titulo": "Kagurabachi Vol. 1",
+    "precio": 2800,
+    "imagen": "img/manga2.jpg"
+  },
+  {
+    "id": 3,
+    "titulo": "Solo Leveling Vol. 1",
+    "precio": 4000,
+    "imagen": "img/manga3.jpg"
+  }
+]
